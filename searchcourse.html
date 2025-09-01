@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Search Contacts</title>
+<link rel="stylesheet" href="styleHOS.css">
+<style>
+    .form .van{
+        color:black;
+        margin-right: -400px;
+        margin-top: -400px;
+
+        font-size: 50px;
+        font-weight: bold;
+
+    }
+    .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(image/card.avif);
+    
+}
+.form form{
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+    box-shadow: 0px 6px 20px rgb(144, 144, 144);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 28rem;
+}
+.form form input,
+select
+{
+    padding: 10px 50px;
+    font-size: 15px;
+}
+.form form button{
+    width: 100%;
+    margin-top: 10px;
+    background-color:#4267B2;
+    color: white;
+    padding: 10px 5px;
+    font-size: 18px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: blue;
+    position: relative;
+    cursor: pointer;
+    
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background:#f44336 ;
+    transition: 1s;
+
+}
+</style>
+</head>
+
+<body>
+<div class="form">
+    
+    <h1 class="van">Search Details</h1>
+
+<form method="post"  action="courselist.php">
+    <div class="form-group">
+<input type="number" class="form-control" placeholder="Enter course id" name="id" >
+</div>
+<br>
+<input type="submit" class="hero-btn" name="submit" value="Search"  >
+</form>
+</div>
+</body>
+</html>
